@@ -1,0 +1,481 @@
+/*CSS pour les fonts */
+
+@font-face {
+    font-family: Lato-Regularimport;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato-Heavyimport;
+    src: url("../fonts/Lato-Heavy.ttf");
+}
+
+@font-face {
+    font-family: Lato-Boldimport;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: Raleway-SemiBoldimport;
+    src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+header, aside {font-family: Lato-Regularimport;}
+
+nav ul li a {
+    font-family: Lato-Heavyimport;
+    font-size:13px;
+    font-style:bolder;
+}
+
+
+/*CSS pour les sections du site */
+/*header*/
+header {
+    background : url('../medias/bg_header.png') repeat;
+    margin-top: -20px;
+}
+
+
+/*header2*/
+.barreNoir{background-color:black;}
+
+/*nav principale*/
+nav {
+	background-color : #42484C; /* gris */
+    height:70px;
+}	
+
+nav ul {
+	list-style-type:none;
+	height:40px;	
+}
+
+nav ul li {height:40px;}
+
+nav ul li a {
+	display:block;
+	width:135px;
+	padding-top:15px;
+	height:40px;
+    padding-bottom: 35px;
+	text-decoration : none;
+	color:white;
+}
+
+nav ul li a:hover, nav ul li a.actif {
+	background-color : #003E7E;  /*bleu*/
+    text-decoration: none;
+    color:white;
+}
+
+.menuSmMd{
+    padding-top:10px;
+    color:white;
+    font-family: Raleway-SemiBoldimport;
+    font-size:23px;
+    font-weight: 900;
+}
+
+/*Nav pour fonrmat xs sm*/ 						/*le code pour ce deuxième menu provient de Bootsnipp.com (Beautiful dropîng Menu by DesignBootstrap) et modifier/adapter au projet. */ 
+.p-set{
+    padding-top:120px;
+    line-height:30px;
+    color:#fff;
+    font-size:16px;
+}
+
+.hr-set {
+    border-top:1px solid rgba(0, 0, 0, 0)!important;
+    margin-bottom:20px;
+    color:white;
+}
+
+.hr-set-two {
+    border-top:1px solid white;
+    margin-bottom:5px;   
+}
+
+/* Side Menu Style */
+
+#side-menu {
+    height:100%;
+    position:fixed;
+    top:-1000px;
+    left:-250px;
+    background-color:#003E7E;
+    color:#000;
+    z-index:999;
+    overflow:auto;
+    max-width:500px;
+}
+
+ #side-menu ul {
+    list-style:none;
+    padding:0px;
+}
+
+#side-menu ul li {
+    border-bottom:1px solid rgba(95, 87, 88, 0.2);
+    padding: 20px 25px;
+    display:inline-block;
+}
+
+#side-menu ul li a i {padding-right:10px;}
+
+#side-menu ul li a,#side-menu ul li a:hover {
+    color:#fff;
+    text-decoration:none;
+    font-size: 16px;
+}
+  
+.logo-text {    
+    cursor: pointer;
+    font-size:20px;
+    font-weight:900;
+    padding-left:20px;
+}
+
+.menu-close-icon {
+    padding:0px 10px;
+    cursor: pointer;
+    color:#000;
+    font-size:25px;
+}
+
+.menu-open-icon {
+    cursor:pointer;
+    color:#fff;
+}
+
+.top1{
+    position:absolute;
+    padding-left: 80%;}
+    
+.intro-txt {padding:20px;}                       /* Fin style deuxieme menu.*/
+
+
+/*Section entrer Groupe */
+
+.centre{
+	text-align: center;
+	margin:auto;
+}
+
+
+/*footer*/
+footer{background-color :#1d1e1e;}
+
+footer h4 {
+	color: #99d7db;
+	font-family: Lato-Boldimport;
+}
+
+.footerLi {
+	font-size:13px;
+	line-height:20px;
+	margin-left:-40px;
+	color:white;
+	text-decoration:none;
+}
+
+.plain {text-decoration:none;}
+
+.spec{color:white;
+	list-style-type:none;
+}
+
+.enligne{float:left;}
+
+.pFooter1{color:white;
+	font-style:italic}
+
+.aLien1{color:white;
+	float:right;
+	margin-bottom:60px;
+	font-weight:600;}
+	
+.aLien2{color:white;
+	margin-bottom:25px;
+	font-weight:600;}
+
+/*Autre CSS*/
+
+h4{font-size:16px;}
+
+.largeur{width:100%;}
+
+.hauteur{margin-top:30px;}
+
+.hauteur2{
+	background-color: #003E7E;
+	font-family: Raleway-SemiBoldimport;
+	color:#fff;
+    border: 2px solid #1d1e1e;
+    border-bottom-left-radius: 10px 5px;
+    border-bottom-right-radius: 10px 5px;
+    border-top-right-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    margin-bottom: 20px;
+    margin-top: 20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-bottom:20px;
+}
+
+.hauteur2 li: hover{
+	 color:#ff00ff;
+     transition: background 0.5s;
+}
+
+.hauteur3{
+	margin-top:20px;
+  	/*border:solid 1px black;*/
+  	margin-bottom:20px;
+}
+
+.hauteur4 img{width:100%;}
+
+.hauteur5{margin-top:40px;}
+
+.hauteur6{min-height:350px;}
+
+.hauteur7{margin-top:70px;}
+
+.marge1{margin-left:10%;}
+
+.droite{float:right;}
+
+.gauche{float:left;}
+
+.erreur {
+	height: 30px;
+	color: red;
+}
+
+.main {height: 500px;}
+
+.logo{
+	width:25%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.logo2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width:100%;
+    max-width:370px;
+}
+
+.searchInput{
+    width: 200px;
+    margin-top: 59px;
+    float: right;
+    opacity: 0.7;
+}
+
+.searchInput2{
+    width: 100%;
+    margin-bottom: 30px;
+    opacity: 0.7;
+    max-width:350px;
+}
+
+.login{
+    text-decoration: none;
+    margin-top: 35px;
+    float: right;
+    color:#0079C2;
+}
+
+.blanc{color:white;}
+
+.entrer_groupe{
+	font-style:italic;
+	font-weight:100;
+}
+
+.bordureNoir{
+	border:solid 2px #1D1E1E;
+	padding: 50px 50px 50px 50px;
+}
+
+.bgBleu{background-color: #003E7E;}
+
+.bgGroupe {background-color: white;}
+
+.bgGroupe img {width:100%;}
+
+/*CSS RAJOUTER PAR JOSE*/
+
+.ContainerRessource{
+	
+	background-color: #003E7E;
+	border: 2px solid #1d1e1e;
+    border-bottom-left-radius: 10px 5px;
+    border-bottom-right-radius: 10px 5px;
+    border-top-right-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.TitreRessource{
+	background:#0079C2;
+	color:#fff;
+	font-size: 25px;
+    padding:10px;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+.DescriptionRessource{
+	background-color: #003E7E;
+	color:#fff;
+	font-size: 20px;
+    padding:50px 35px;;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;		
+}
+
+
+/*CSS POUR MENU DEROULANT AJOUTER PAR JOSE*/
+
+@mixin arrow-down($size: 10px, $color: #fff){
+	width: 0; 
+	height: 0; 
+	border-left: $size solid transparent;
+	border-right: $size solid transparent;
+	border-top: $size solid $color;
+}
+
+@mixin arrow-right($size: 10px, $color: #fff){
+	width: 0; 
+	height: 0; 
+	border-top: $size solid transparent;
+	border-bottom: $size solid transparent;
+	border-left: $size solid $color;
+}
+
+@mixin sans-serif() {
+  font-family: "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
+}
+
+@mixin text-smooth()
+{
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #13487e;
+  @include background-image(linear-gradient(top, rgb(19, 72, 126), rgb(14, 41, 69)));
+  @include filter-gradient(rgb(19, 72, 126), rgb(14, 41, 69), vertical);
+}
+
+.accordion {
+  width: 302px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* all accordion styles below here */
+
+.accordion {
+  
+  dl {
+    
+    width: 302px;
+    @include sans-serif;
+    @include text-smooth;
+    @include transition-duration(350ms);
+    
+    &:hover {
+      @include box-shadow(0px 0px 10px 3px rgba(0, 0, 0, .25));
+    }
+    
+    dt {
+      
+      a {
+        background-color: #82A1BD;
+        position: relative;
+        text-transform: uppercase;
+        width: 100%;
+        height: 50px;
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        
+        .arrow {
+            @include arrow-right(6px);
+            position: absolute;
+            left: 14px; 
+            top: 18px;
+            
+            .cssanimations & {
+              @include transition-duration(350ms);
+
+              &.down-anim {
+                @include rotate(90deg);
+              }
+            }
+          
+            &.down {
+              @include arrow-down(6px);
+              top: 21px;
+              left: 12px;
+            }
+        }
+      }
+      
+      &.active, &:hover {
+        a {
+            background-color: #507BA2;
+        }
+      }
+      &.active {
+        a {
+          @include box-shadow(inset 0px -4px 8px 0px rgba(0, 0, 0, .2));
+        }
+      }
+    }
+    
+    dd {
+      background-color: #ffffff;
+      @include background-image(linear-gradient(top, rgb(255, 255, 255), rgb(247, 247, 247)));
+      @include filter-gradient(rgb(255, 255, 255), rgb(247, 247, 247), vertical);
+      padding: 10px;
+      display: none;
+      height: 293px;
+      
+      &.active {
+        display: block;
+      }
+      
+      p {
+        line-height: 1.4;
+      }
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
+

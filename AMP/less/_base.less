@@ -1,0 +1,225 @@
+/******************************************************************
+
+Stylesheet: Base Stylesheet
+
+******************************************************************/
+
+//affectation des variables.
+
+@Width : 80%;
+@pad_up: 10px;
+@pad_down: 30px;
+@menu_pad: 8px;
+@menu_pad2: 8px;
+
+
+//début de less/css
+//less pour les colonnes 
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol 
+ {width:100%;}                       // Les colonnes utilisant le fichier GRID.LESS 
+                                       
+.first, .last {margin:0px;}                  // auront une largeur maximal sans marges.             
+
+//less pour la mise en page générale
+
+.global {
+    width: 100%;
+    min-width: 1328px;                             // Pour le moment la grandeur minimal est bloqué à 1240px;
+}
+
+.contenant  {
+    width: @Width;
+    margin: auto;
+}
+
+ /********** IMPORTATION DES FONTS ET LESS POUR LES FONTS ********/           
+
+@font-face	{
+			font-family:redrocketimport;
+			src:url("../fonts/redrocket.ttf");
+			}
+
+@font-face	{
+			font-family:praetorianacadimport;
+			src:url("../fonts/praetorianacad.ttf");
+			}
+
+/*****************   Less CSS Global *********************/
+
+.police_couleur {color: #fff;}
+
+.justify {text-align: justify;}
+
+.praetor {font-family: praetorianacadimport;}
+
+.praetor2 {
+    font-family: praetorianacadimport;
+    float:right;
+    padding-bottom: 10px;
+}
+                                                          
+//.max_w      {max-width:100px;}          //  Besoin d'implementer un systeme pour limiter la longeur des mots ou la largeur totale d'une ligne de texte.
+
+/*****************   Less pour HEADER **********************/
+
+.fond_image	{
+    background:url(../images/darkcore_7.jpg);
+    display: block;
+    margin-top: -40px;
+    background-attachment:fixed;
+}
+
+.rectangle_header {
+    background-color: #fff;
+    opacity: 0.55;
+}
+
+.amp {
+    margin-top: -1px;
+    padding-left:30px;
+    padding-top: 20px;
+    font-size: 110px;
+    font-family: redrocketimport;
+    color: #fa0000;
+}
+
+.espace{padding-top: @pad_up+60px;}
+                 
+.lien_langues {padding-right: 27px;}
+                
+/***********   CSS/LESS MENU PRINCIPAL   ********/
+
+.rectangle_menu1 {
+    clear:both;
+    background-color: #fa0000; 
+    }
+
+.rectangle2_menu1 { 
+   background-color: #fa0000;
+   padding-top: 7px;
+   padding-bottom: 50px;
+   opacity:0.9;
+}
+
+
+.rectangleTrans1  {
+    background-color: #fa0000;
+    padding-top: 6px;  
+    opacity: 0.5;   
+    clear:both;
+}
+
+.alignement_menu {margin-top: -83px;} 
+                                     
+.onglet {
+    padding: @menu_pad2;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    font-family: redrocketimport; 
+    opacity: 1.0;
+    border-right: solid white 1px;
+}
+
+
+.onglet:hover  {
+    padding: @menu_pad2;
+    font-size: 13px;               
+    text-align: center;
+    color: #8e8d8d;
+    font-family: redrocketimport; 
+    border-right: solid white 1px;
+}
+
+.onglet1 {
+    padding: @menu_pad;
+    font-size: 13px;              
+    text-align: center;
+    color: #ffffff;
+    font-family: redrocketimport; 
+    border-right: white;
+    opacity: 1.0;
+    border-right: solid white 1px;   
+}
+
+.onglet1:hover  {
+    padding: @menu_pad2;
+    font-size: 13px;
+    text-align: center;
+    color: #8e8d8d;
+    font-family: redrocketimport; 
+    border-right: solid white 1px;
+}
+
+.width_menu {width:100%;}
+
+.none_menu  {
+    text-decoration: none;
+    color: #fff;
+}
+
+.none_menu:hover {color: #8e8d8d;}
+            
+.none_menu:active {color: #424242;}
+
+.espace_titre {
+    padding-top: 10px;
+    clear:both;
+}
+
+/**CSS Page evenement a venir**/
+
+.col1 {                                       // Colonne de gauche
+    .sevencol;
+    .first;   
+    background-color: black;
+    //height:auto;
+    opacity: 0.75;
+}
+
+.col2  {                                      // Colonne droite
+    .fivecol;
+    .last;
+    background-color: black;
+    //height:auto;
+    opacity: 0.75;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.pad_date {padding-left: 2%}
+
+.pad_titre {padding-left: 20%}
+
+.pad_top {padding-top: 13px;}
+
+.max_centre  {
+    max-width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+/*********CSS FOOTER********************/
+
+.rectangle_footer {
+    background-color: #ffffff;
+    opacity: 0.55;
+    padding-top: 70px;
+    clear:both;
+}
+
+.copyright {
+    font-family: redrocketimport;
+    text-align: right;
+    padding-bottom: 20px;
+    padding-right:30px; 
+    font-size: 20px;
+}
+
+.margin_bottom {margin-bottom: 30px;}
+
+.padding_bottom {padding-bottom: 30px;}
+
+

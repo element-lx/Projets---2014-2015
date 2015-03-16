@@ -1,0 +1,169 @@
+/***
+ Travail pratique 2
+ François Tremblay,David Julien
+  groupe 1657****/
+
+
+/****CSS pour les colonnes ****/
+.colHead{
+    width: 70%;
+    min-width:490px;
+    margin: auto;
+    height: 90px;
+    background-color: #eeeeee;
+    margin-top:35px;  
+    border: solid 2px orange;
+    -moz-box-shadow:
+		10px 10px 10px rgba(000,000,000,5),
+		inset 1px 1px 1px rgba(000000000,000000,000,5);
+	-webkit-box-shadow:
+		10px 10px 10px rgba(000,000,000,5),
+		inset 1px 1px 1px rgba(000000000,000000,000,5);
+	box-shadow:
+		10px 10px 10px rgba(000,000,000,5),
+		inset 1px 1px 1px rgba(000000000,000000,000,5);
+}
+
+.contenant{
+    width: 60%;
+    min-width: 450px; 
+    margin:auto;
+    margin-top:140px;
+    margin-bottom: 80px;
+    background-color: #eeeeee;
+    height: 470px;
+    border: solid 2px orange;
+    -moz-box-shadow:
+		10px 10px 10px rgba(000,000,000,5),
+		inset 1px 1px 1px rgba(000000000,000000,000,5);
+	-webkit-box-shadow:
+		10px 10px 10px rgba(000,000,000,5),
+		inset 1px 1px 1px rgba(000000000,000000,000,5);
+	box-shadow:
+		10px 10px 10px rgba(000,000,000,5),
+		inset 1px 1px 1px rgba(000000000,000000,000,5);
+}
+
+.col1{
+    width:48%;
+    height: 200px;
+    float:left;  
+}
+
+.col2{
+    width:40%;
+    height: 200px;
+    margin-left: 10px;
+    float:left;
+}
+
+/***CSS pour les fonts****/
+
+@font-face {
+    font-family: futrfwimport;
+    src: url("../fonts/futrfw.ttf");
+}
+
+.atwriter {
+    font-family: futrfwimport;
+    font-weight: bolder;
+    font-size:30px;
+    padding-top: 30px;
+    text-align:center;
+}
+
+/***CSS aditionnel****/
+
+input{display: inline-block;}
+
+p {margin: 0px;}
+
+.droite{float:right;}
+
+.texteDroite{text-align: right;}
+
+.formulaire{margin-top: 41px;}
+
+.espace1{margin-top:40px;}
+
+.espace2{margin-top:37px;}
+
+.espace3{margin-top:34px;}
+
+.espaceBouton{margin-top:20px;}
+
+.icon {margin-top: 4px;}
+
+.imgSize {
+    position: absolute;
+    margin-left: 10px;
+    height:20px;
+    width:20px;
+}
+
+.largeur{
+    width:100%;
+    max-width: 170px;
+}
+
+label{
+    width:250px; 
+    float: left;
+}
+
+.succes{
+    color:black;
+    font-size:15px;
+    font-style: italic;
+    text-align: right;
+    font-weight:bold;
+    margin-top: 15px;
+}
+
+.enligne{
+    display:inline;
+    margin-right:20px;
+}
+
+/*CSS bouton*/   /*fait avec CSS3button generator (css3button.net)*/
+
+button{
+    outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+/*	color: #eb9500;
+    -webkit-transition: color 0.5s;                          /*Lorsque le curseur arrete le hover*/
+/*    transition: color 0.5s;                                  /*la couleur de depart revient graduellement*/
+
+    float:right;
+    margin-right: 150px;
+	padding: 6px 14px;
+/*	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#4a2e18);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		to(#4a2e18));*/
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;  
+	border: 1px solid #030303;
+	text-shadow:
+		0px -1px 0px rgba(112,78,9,0.4),
+		0px 1px 0px rgba(255,213,0,0.3);
+}
+
+button:active{   
+   margin-top:4px;
+    padding: 5px 13px;
+    -webkit-transition: padding 0.3s; 
+    transition: padding 0.3s;
+}
+
+button:hover{
+    color: #000;
+    -webkit-transition: color 0.5s; 
+    transition: color 0.5s;
+}

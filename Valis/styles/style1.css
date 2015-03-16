@@ -1,0 +1,79 @@
+	body 
+	{
+		height:auto;
+		/*background: linear-gradient( black, blue);*/
+		margin:0px;
+		width:100%;
+	}
+	#global 
+	{
+		position: relative;
+		width: 100%;
+		height:100%;
+	
+	} 
+	#header
+	{
+		position:relative;	
+		width:100%;
+		height:80px;
+		background-color:silver;
+		text-align: center;
+		border: solid 1px black;
+	}
+
+	h1
+	{
+		text-align: center;
+	}
+	ul
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#main 
+	{
+	position: absolute;
+		top:85px;
+		left:11%;
+		width:100%;
+		height:100%;
+		
+	}
+	
+	.valis_frame
+	{
+		width:100%;
+	}
+	
+	
+	#footer
+	{
+		position: absolute;	
+		width:100%;
+		height:30px;
+		top:950px; 
+		background-color:#86745e;
+		text-align:center;
+	}
+	#accueil
+	{
+		position: relative;
+		margin-left: 4px;
+		width:100%;
+		
+	}
+	.centrer{
+		
+		text-align: center;
+	}
+	
+	#flashContent{
+		
+		text-align:center;
+	}
+
+	
+	

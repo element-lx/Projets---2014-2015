@@ -1,0 +1,179 @@
+/**
+ * 	TP2 Les maires de Québec
+ * 
+ *	Application qui donne la liste des maires des villes du Québec et 
+ * 	permet de faire des recherches dans cette liste.
+ *
+ *  STYLE.CSS 
+ * 
+ * Feuille de style pour Exercice 3 
+ * 
+ * @author Steven Castelli
+ * @version 1.0
+ * @update 2014-10-23
+ * @license Aucune
+ * @reference Inspiré par exemple donné en classe par Jonathan MArtel
+ * 
+ */
+
+/*bleu: 00488c*/
+/*rouge: e33131*/
+
+@font-face
+{
+font-family: 'Hazelnut';
+src: url('PeanutButterCookies.ttf');
+}
+
+.villes{
+	clear:left;
+	float: left;
+}
+
+body{
+	background-image:url('bg.jpg');
+	font-family: 'Hazelnut';
+	color:white;
+	line-height: 125%;
+	font-size: 16pt;
+	text-shadow: 2px 2px #000000;
+	text-align:center;
+
+}
+
+main{
+	 width: 400px;
+ 	 margin: 0 auto; 
+}
+
+
+h1{
+	font-size: 40pt;
+	vertical-align: center;
+}
+
+header{
+	margin-top:50px;
+}
+
+footer{
+	margin-top: 20px;
+}
+
+nav ul li{
+	display:inline-block;
+	border-right: 5px solid #00488c;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+nav ul li:last-child {
+    border: none;
+}
+
+fieldset{
+	margin-top: 15px;
+	text-align:center;
+	width:90%;
+}
+
+.tri{
+	width:30%;
+	float:left;
+}
+
+.ordre{
+	width:30%;
+	float:left;
+}
+
+.bouton{
+	float: right;
+	/*margin-top: 200px;*/
+
+}
+
+.erreur{
+	color:#e33131;
+}
+
+.login{
+	float: left;
+}
+/************************/
+/** STYLE DES LIENS **/
+/***********************/
+
+a:link 
+{
+    /*color: #e33131;*/
+    color: #FFFFFF;
+	text-decoration:none;
+}
+
+/* visited link */
+a:visited 
+{
+    /*color: #FF3333;*/
+	color: #FFFFFF;
+	text-decoration:none;
+}
+/* mouse over link */
+a:hover {
+    color: #000000;
+}
+
+/* selected link */
+a:active {
+    color: #000000;
+}
+/************************/
+/***********************/
+
+/************************/
+/** STYLE DES BOUTONS **/
+/** @reference www.bestcssbuttongenerator.com **/
+/***********************/
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 13px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+/*************************************************************************/
+/*************************************************************************/

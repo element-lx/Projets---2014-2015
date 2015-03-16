@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Lato-Heavyimport;
+    src: url("fonts/Lato-Heavy.ttf");
+}
+
+
+#containerAccueil{
+  color: grey;
+	background-color: #003366;
+  padding-top: 50px;
+  padding-bottom: 300px;
+
+}
+
+#CentrerLogo{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+#logoTexte{
+	margin-right: auto;
+	margin-left: auto;
+    display: inline-block;
+	width:70%;
+	margin-top: 5%;
+}
+#logoTexte img{
+    width:220px;
+    display: inline-block;
+	
+	
+}
+
+#logoTexte h1{
+	font-size: 61px;
+	 display: inline-block;
+	 margin-left: 30px;
+	text-align: justify;
+    text-justify: inter-word;
+	width:50px;
+	font-family:'Lato', sans-serif;
+	color:#fff;
+}
+
+
+
+ #menu-accordeon {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+  width: 53%;
+}
+#menu-accordeon ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+#menu-accordeon li {
+	font-family:'Lato', sans-serif;
+   		background-color:#0003a8; 
+		 background-image: -moz-linear-gradient(top, #003366 0%, #000336 100%); 
+		 background-image: -webkit-linear-gradient(top, #003366 0%, #000336 100%); 
+		 background-image: -o-linear-gradient(top, #003366 0%, #000336 100%); 
+		 background-image: -ms-linear-gradient(top, #003366 0% ,#000336 100%); 
+		 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000336', endColorstr='#000336',GradientType=0 ); 
+		 background-image: linear-gradient(top, #003366 0% ,#000336 100%);   
+ 
+}
+#menu-accordeon li li {
+	
+   max-height:0;
+   overflow: hidden;
+   transition: all .75s;
+   border-radius:0;
+  /* background: #444;*/
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+#menu-accordeon a {
+	font-family: 'Lato', sans-serif;
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+  font-family: verdana;
+  font-size:1.2em
+}
+#menu-accordeon ul li a, #menu-accordeon li:hover li a {
+	font-family:'Lato', sans-serif;
+  	font-size:1em
+}
+#menu-accordeon li:hover {
+         background-color:#0003a8; 
+		 background-image: -moz-linear-gradient(top, #003366 0%, #0054A8 100%); 
+		 background-image: -webkit-linear-gradient(top, #003366 0%, #0054A8 100%); 
+		 background-image: -o-linear-gradient(top, #003366 0%, #0054A8 100%); 
+		 background-image: -ms-linear-gradient(top, #003366 0% ,#0054A8 100%); 
+		 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#003366',GradientType=0 ); 
+		 background-image: linear-gradient(top, #003366 0% ,#0054A8 100%);  
+		 border-radius: 0 0 6px 6px;
+  		 border:none; 
+}
+#menu-accordeon li li:hover {
+        background-color:#0003a8;
+        transition: all .5s; 
+
+		
+}
+#menu-accordeon ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+#menu-accordeon li:hover li {
+  max-height: 15em;
+
+}
+
+
+

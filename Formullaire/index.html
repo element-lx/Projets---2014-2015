@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+Auteurs: Francois Tremblay David Julien
+Programmation Client Serveur
+Formulaire avec jQuery
+02 Fev 2015
+-->
+
+<html>
+	<head>
+        <title>TP2 Programmation Client Serveur</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Formulaire avec jQuery"> 
+        <meta name="Author" content="Francois Tremblay, David Julien">
+        <link rel="stylesheet" type="text/css" href="style/style.css"> 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/javascript.js" type="text/javascript"></script>
+	</head>
+    
+	<body>
+		<div class="colHead">
+            <div>
+	 		    <p class="atwriter">Inscrivez-vous <img src="images/crayon4.png" class="icon" alt="Inscrivez-vous!" height="35" width="30"></p>
+            </div>
+	       	<div class="contenant">
+	        	
+	        	<!-- Colonne de gauche -->
+            	<div class="col1">
+               		<div class="droite">
+                        <label class="texteDroite espace1">Entrez votre nom :</label><br>
+                        <label class="texteDroite espace1">Entrez votre prénom :</label><br>
+                        <label class="texteDroite espace1">Entrez votre date de naissance :</label><br>
+                        <label class="texteDroite espace1">Entrez votre courriel :</label><br>
+                        <label class="texteDroite espace1">Sélectioner un pays : </label><br>
+                    	<label class="texteDroite espace1">Indiquez votre ville :</label><br>
+                    </div>
+				</div>
+				
+				<!-- Colonne de droite -->
+               	<div class="col2">
+                	<form name="monFormulaire" class="formulaire">
+                        <input type="text" name="nom"><span id="iconNom"> </span> <!-- Afficher l'icones d'erreur ou de bonne réponse -->
+                        <p class="espace2">
+                            <input type="text" name="prenom"><span id="iconPrenom" </span><!-- Afficher l'icones d'erreur ou de bonne réponse -->
+                        </p>
+                        <p class="espace2">
+                            <input type="date" name="dateNaissance" class="largeur"> <span id="iconNaissance"> </span><!-- Afficher l'icones d'erreur ou de bonne réponse -->
+                        </p>
+                        <p class="espace3">
+                            <input type="text" name="email"><span id="iconEmail"> </span><!-- Afficher l'icones d'erreur ou de bonne réponse -->
+                        </p>
+                        <div class="espace2"> </div>
+                        <div class="enligne">
+	                       <span><input  type="radio" name="pays" value="canada" class="radio1">Canada</span>
+	                       <span><input  type="radio" name="pays" value="usa" class="radio2">État-Unis</span>               
+                    	</div>
+                    	<span id="iconPays"> </span> <!-- Afficher l'icones d'erreur ou de bon réponse -->
+                    	<p class="espace2">
+                            <input list="villeListe" name="ville" id="ville"  value=""><span id="iconVille"> </span>
+                        </p>
+                        <datalist id="villeListe"> </datalist>	  
+                    </form>
+                    
+                    <span id="bravo"> <span><!-- Afficher lemessage de bienvenu-->
+                        
+                    <div class="espaceBouton">
+                    	<button type="button" disabled id="button">Enroll!</button> 
+                    </div>
+				</div>	
+			</div>
+		</div> 
+	</body>
+</html>
